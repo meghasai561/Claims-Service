@@ -1,0 +1,16 @@
+/workspaces/Claims-Service/src/main/java/com/example/claimservice/state/ClaimState.java
+/workspaces/Claims-Service/src/main/java/com/example/claimservice/controller/ClaimController.java
+/workspaces/Claims-Service/src/main/java/com/example/claimservice/exception/GlobalExceptionHandler.java
+/workspaces/Claims-Service/src/main/java/com/example/claimservice/state/ApprovedState.java
+/workspaces/Claims-Service/src/main/java/com/example/claimservice/state/CancelledState.java
+/workspaces/Claims-Service/src/main/java/com/example/claimservice/entity/Policy.java
+/workspaces/Claims-Service/src/main/java/com/example/claimservice/service/ClaimService.java
+/workspaces/Claims-Service/src/main/java/com/example/claimservice/repository/PolicyRepository.java
+/workspaces/Claims-Service/src/main/java/com/example/claimservice/ClaimServiceApplication.java
+/workspaces/Claims-Service/src/main/java/com/example/claimservice/entity/ClaimType.java
+/workspaces/Claims-Service/src/main/java/com/example/claimservice/state/ClaimStateFactory.java
+/workspaces/Claims-Service/src/main/java/com/example/claimservice/repository/ClaimRepository.java
+/workspaces/Claims-Service/src/main/java/com/example/claimservice/entity/ClaimStatus.java
+/workspaces/Claims-Service/src/main/java/com/example/claimservice/entity/Claim.java
+/workspaces/Claims-Service/src/main/java/com/example/claimservice/state/SubmittedState.java
+/workspaces/Claims-Service/src/main/java/com/example/claimservice/state/RejectedState.java

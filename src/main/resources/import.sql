@@ -1,0 +1,2 @@
+INSERT INTO policies (policy_number, medical_limit, dental_limit, travel_limit) VALUES ('POL-1001', 5000.00, 2000.00, 3000.00);
+INSERT INTO policies (policy_number, medical_limit, dental_limit, travel_limit) VALUES ('POL-2002', 10000.00, 4000.00, 5000.00);
