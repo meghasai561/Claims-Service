@@ -13,7 +13,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(IllegalArgumentException.class)
     public ResponseEntity<Map<String, String>> handleIllegalArgumentException(IllegalArgumentException e) {
-        System.out.println("Error: " + ex.getMessage());  // Add this for debugging
+        System.out.println("Error: " + e.getMessage());  // Add this for debugging
         Map<String, String> error = new HashMap<>();
         error.put("error", e.getMessage());
         return ResponseEntity.badRequest().body(error);
