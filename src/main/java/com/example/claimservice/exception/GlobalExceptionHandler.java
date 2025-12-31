@@ -11,6 +11,14 @@ import java.util.Map;
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
+    @ExceptionHandler(jakarta.validation.ConstraintViolationException.class)
+    public ResponseEntity<Map<String, String>> handleConstraintViolation(jakarta.validation.ConstraintViolationException e) {
+        System.out.println("Validation error: " + e.getMessage());  // Add this for logging
+        Map<String, String> error = new HashMap<>();
+        error.put("error", "Validation failed: " + e.getMessage());
+        return ResponseEntity.badRequest().body(error);
+    }
+
     @ExceptionHandler(IllegalArgumentException.class)
     public ResponseEntity<Map<String, String>> handleIllegalArgumentException(IllegalArgumentException e) {
         System.out.println("Error: " + e.getMessage());  // Add this for debugging
