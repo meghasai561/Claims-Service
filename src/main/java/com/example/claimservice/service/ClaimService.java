@@ -33,12 +33,14 @@ public class ClaimService {
         // Validate policy exists
         Policy policy = policyRepository.findById(claim.getPolicyNumber())
                 .orElseThrow(() -> new IllegalArgumentException("Policy not found"));
+        System.out.println("Policy found: " + policy.getPolicyNumber()); // Add this for debugging
 
         // Validate coverage
         validateCoverage(claim, policy);
 
         // Validate description length
         if (claim.getDescription() != null && claim.getDescription().length() > 500) {
+            System.out.println("Description too long");  // Add this
             throw new IllegalArgumentException("Description too long");
         }
 
