@@ -72,6 +72,9 @@ public class ClaimService {
             if (status != null) {
                 predicates.add(criteriaBuilder.equal(root.get("status"), status));
             }
+            System.out.println("Predicates--------: " + predicates); // Debugging line
+            System.out.println("CriteriaBuilder--------: " + criteriaBuilder); // Debugging line
+            // Log.info("--------------Building search criteria with predicates: {}", predicates);
             return criteriaBuilder.and(predicates.toArray(new Predicate[0]));
         });
     }
